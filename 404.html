@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Corlanth Search Partners</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to the Corlanth Search Partners homepage.">
+  <meta name="robots" content="noindex">
+  
+  <link rel="icon" type="image/png" href="https://freelankarx.com/logo.png">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--spacing-lg);
+    }
+    .error-code {
+      font-size: 10rem;
+      font-family: var(--font-heading);
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: var(--spacing-sm);
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .error-code { font-size: 6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="error-page">
+    <div>
+      <div class="error-code reveal">404</div>
+      <h1 class="reveal reveal-delay-1" style="font-size: var(--text-3xl); margin-bottom: var(--spacing-sm);">Page Not Found</h1>
+      <p class="reveal reveal-delay-2" style="color: var(--color-text-muted); max-width: 500px; margin: 0 auto var(--spacing-lg);">
+        The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+      </p>
+      <div class="reveal reveal-delay-3" style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
+        <a href="./" class="btn btn-primary">Return to Homepage</a>
+        <a href="./pages/contact/" class="btn btn-outline">Contact Us</a>
+      </div>
+      
+      <!-- Helpful Links -->
+      <div class="reveal reveal-delay-4" style="margin-top: var(--spacing-xl); max-width: 400px; margin-left: auto; margin-right: auto;">
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-sm);">Looking for something specific?</p>
+        <ul style="display: grid; gap: 8px; font-size: var(--text-sm); text-align: left;">
+          <li><a href="./pages/about/" style="color: var(--color-accent);">→ About Corlanth</a></li>
+          <li><a href="./pages/sectors/" style="color: var(--color-accent);">→ Our Sectors</a></li>
+          <li><a href="./pages/process/" style="color: var(--color-accent);">→ Our Process</a></li>
+          <li><a href="./pages/case-studies/" style="color: var(--color-accent);">→ Case Studies</a></li>
+          <li><a href="./pages/insights/" style="color: var(--color-accent);">→ Latest Insights</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/scroll-animations.js"></script>
+
+</body>
+</html>

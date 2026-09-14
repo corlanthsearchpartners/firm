@@ -1,0 +1,55 @@
+﻿:root {
+  /* 🎨 Colors: 60% Neutral, 30% Primary, 10% Accent */
+  --color-bg: #FAFAFA;          /* Warm off-white */
+  --color-bg-alt: #F0F2F5;      /* Slightly darker for sections */
+  --color-text: #1A1A1A;        /* Near-black for readability */
+  --color-text-muted: #555555;  /* Grayscale for secondary text */
+  
+  --color-primary: #0F172A;     /* Deep Navy (Trust, Premium) */
+  --color-primary-light: #1E293B;
+  
+  --color-accent: #C4A484;      /* Muted Gold / Copper (CTAs only) */
+  --color-accent-hover: #A88B6A;
+
+  /* 🔠 Typography */
+  --font-heading: 'Playfair Display', Georgia, serif; /* Credibility */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; /* Readability */
+  
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+
+  /* 📏 Spacing & Layout */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* ✨ Effects */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark mode support (optional but premium) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0F172A;
+    --color-bg-alt: #1E293B;
+    --color-text: #F8FAFC;
+    --color-text-muted: #94A3B8;
+    --color-primary: #F8FAFC;
+    --color-primary-light: #E2E8F0;
+  }
+}/* Design tokens – colors, typography, spacing */

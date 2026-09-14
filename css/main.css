@@ -1,0 +1,15 @@
+﻿/* 1. Fonts (Loaded from Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* 2. Core */
+@import 'variables.css';
+@import 'reset.css';
+
+/* 3. Structure */
+@import 'layout.css';
+
+/* 4. UI Elements */
+@import 'components.css';
+
+/* 5. Motion */
+@import 'animations.css';

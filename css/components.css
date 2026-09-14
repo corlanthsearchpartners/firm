@@ -1,0 +1,130 @@
+﻿/* Buttons, cards, forms, marq/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.75rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Cards */
+.card {
+  background: var(--color-bg);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+/* 3D Hero Container */
+.hero-3d-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none; /* Let clicks pass through to text if needed */
+}
+
+@media (max-width: 768px) {
+  .hero-3d-container {
+    width: 100%;
+    opacity: 0.4;
+  }
+}
+
+/* CSS Marquee (Pure CSS, no JS) */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: var(--spacing-md) 0;
+  background: var(--color-bg-alt);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 var(--spacing-lg);
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.marquee-item img {
+  height: 32px;
+  width: auto;
+  margin-right: var(--spacing-sm);
+  opacity: 0.7;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .btn:hover, .card:hover {
+    transform: none;
+  }
+}
+
+/* Placeholder Image Utility (Uses your default link gracefully) */
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-alt);
+}uee, 3D hero */

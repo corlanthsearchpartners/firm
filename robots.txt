@@ -1,0 +1,20 @@
+﻿# robots.txt for Corlanth Search Partners
+# https://corlanthsearchpartners.com
+
+# Allow all crawlers full access to public content
+User-agent: *
+Allow: /
+
+# Block private/admin routes (if any are added later)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Block legal pages from search indexing (they're linked but shouldn't compete for SEO)
+# Note: noindex meta tags handle this, but robots.txt provides belt-and-suspenders
+Disallow: /legal/
+
+# Sitemap location
+Sitemap: https://corlanthsearchpartners.com/sitemap.xml
+
+# Crawl-delay for polite crawling (optional, helps server performance)
+Crawl-delay: 1
